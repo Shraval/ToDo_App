@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Sidebar.views import StartPageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', StartPageView.as_view(), name='App-Page'),
 ]
