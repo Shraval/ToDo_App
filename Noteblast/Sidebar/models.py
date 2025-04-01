@@ -12,3 +12,22 @@ class Meta():
 
 class Trash (models.Model):
     NewNotes = models.CharField(max_length=100)
+
+class Tag (models.Model):
+    caption = models.CharField(max_length=20)
+
+    def __str__(self):
+        return f"{self.caption}"
+    
+class NewNote(models.Model):
+    untitled = models.CharField(max_length=100)
+
+    def __str__(self):
+        return f"{self.untitled}"
+
+class NewToDo(models.Model):
+    untitled = models.CharField(max_length=20)
+
+    def __str__(self):
+        return f"{self.untitled}"
+

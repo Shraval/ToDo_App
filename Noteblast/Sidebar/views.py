@@ -10,4 +10,6 @@ class StartPageView(ListView):
     model = Trash
  
 def HomePage(request):
-    return render (request,'index.html')
+    return render (request,'base.html')
+
+
